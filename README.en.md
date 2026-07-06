@@ -43,3 +43,4 @@ This project is built upon [jsmpeg-vnc](https://github.com/phoboslab/jsmpeg-vnc)
 
 ---
 If you find this project helpful, please consider giving it a Star⭐!
+![Interface Preview](screenshot.png)
