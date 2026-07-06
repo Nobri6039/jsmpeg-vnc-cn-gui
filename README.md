@@ -1,44 +1,44 @@
-## 🚀 快速开始
-### 1. 准备依赖
-从[jsmpeg-vnc官方Release页](https://github.com/phoboslab/jsmpeg-vnc/releases)下载最新版本的`jsmpeg-vnc-win.zip`，解压后将`jsmpeg-vnc.exe`与其同目录文件复制到上述`Bin`目录中。（默认搭载如下版本）
+## 🚀 Quick Start
+### 1. Prepare Dependencies
+Download the latest `jsmpeg-vnc-win.zip` from the [jsmpeg-vnc Official Release Page](https://github.com/phoboslab/jsmpeg-vnc/releases). Extract the files and copy `jsmpeg-vnc.exe` along with its accompanying files into the `Bin` directory mentioned above. (Default bundled version below)
 jsmpeg-vnc © Dominic Szablewski (phoboslab)
 https://github.com/phoboslab/jsmpeg-vnc
 License: GPLv3
 Bundled version: v0.2
 
-### 2. 运行GUI
-直接双击`jsmpeg-vnc-gui.exe`启动，配置参数后点击「启动」即可：
-- **基础推流**：端口填`8080`，窗口名填`desktop`，浏览器访问`http://localhost:8080`
-- **游戏推流（鼠标锁定）**：勾选「URL添加?mouselock」，窗口名填游戏窗口标题，访问`http://localhost:8080/?mouselock`
-- **低带宽适配**：比特率填`1000`，尺寸填`854x480`，帧率填`24`
+### 2. Run the GUI
+Double-click `jsmpeg-vnc-gui.exe` to launch. Configure the parameters and click "Start":
+- **Basic Streaming**: Set Port to `8080`, Window Name to `desktop`. Access via browser at `http://localhost:8080`.
+- **Game Streaming (Mouse Lock)**: Check "Add ?mouselock to URL", set Window Name to the game window title. Access at `http://localhost:8080/?mouselock`.
+- **Low Bandwidth Adaptation**: Set Bitrate to `1000`, Resolution to `854x480`, FPS to `24`.
 
-### 3. 停止服务
-点击GUI内「停止」按钮，或直接关闭GUI窗口，所有资源会自动释放。
+### 3. Stop Service
+Click the "Stop" button within the GUI, or simply close the GUI window. All resources will be released automatically.
 
-## 🛠️ 编译指南（Visual Studio）
-1. 新建「Windows桌面向导」→ 选择「桌面应用程序」、「空项目」
-2. 将本项目的`main.cpp`添加到项目中
-3. 项目属性 → 高级 → 字符集选择「使用Unicode字符集」（或保持默认多字节均可）
-4. 直接编译生成，无需额外链接第三方库
-> ⚠️ 调试运行时需注意：Visual Studio默认工作目录为项目目录，请确保`Bin`目录位于项目根目录下，或修改调试属性的「工作目录」为`$(TargetDir)`
+## 🛠️ Build Guide (Visual Studio)
+1. Create a new "Windows Desktop Wizard" project → Select "Desktop Application" and "Empty Project".
+2. Add the project's `main.cpp` to the project.
+3. Project Properties → Advanced → Set Character Set to "Use Unicode Character Set" (keeping the default Multi-Byte is also fine).
+4. Compile and build directly; no additional third-party libraries need linking.
+> ⚠️ Note during debugging: Visual Studio sets the working directory to the project directory by default. Ensure the `Bin` directory is located in the project root, or modify the "Working Directory" in the debugging properties to `$(TargetDir)`.
 
-## ❓ 常见问题
-### Q：浏览器访问提示404？
-A：检查`Bin/client/index.html`是否存在，若缺失请重新下载jsmpeg-vnc完整包。
+## ❓ FAQ
+### Q: Browser shows 404 error?
+A: Verify if `Bin/client/index.html` exists. If missing, re-download the complete jsmpeg-vnc package.
 
-### Q：提示端口被占用？
-A：GUI启动时会自动释放残留端口，若仍报错可手动更换端口（如8081），或等待TCP的TIME_WAIT状态结束（约1分钟）。
+### Q: Prompt says port is already in use?
+A: The GUI attempts to automatically free occupied ports on startup. If the error persists, manually change the port (e.g., to 8081), or wait for the TCP TIME_WAIT state to expire (approx. 1 minute).
 
-### Q：任务管理器结束GUI后，jsmpeg-vnc仍在运行？
-A：正常情况下Job Object机制会自动清理，若出现极端情况，可手动结束`jsmpeg-vnc.exe`进程，不影响后续使用。
+### Q: After ending the GUI via Task Manager, `jsmpeg-vnc` is still running?
+A: Normally, the Job Object mechanism cleans up child processes automatically. In rare cases where this fails, manually terminate the `jsmpeg-vnc.exe` process. This does not affect subsequent usage.
 
-## 📜 合规说明
-- **本GUI项目**：源代码采用MIT许可证，你可自由修改、分发、商用，无需开源你的修改。
-- **jsmpeg-vnc依赖**：© Dominic Szablewski (phoboslab)，遵循[GPLv3许可证](https://www.gnu.org/licenses/gpl-3.0.html)。本项目仅为独立进程调用，不构成派生作品，因此MIT许可证与GPLv3互不冲突。
-- ** redistribution要求**：若你需要打包分发包含jsmpeg-vnc的成品，请务必保留jsmpeg-vnc的LICENSE文件及原作者署名。
+## 📜 Compliance & License
+- **This GUI Project**: Source code is licensed under MIT. You are free to modify, distribute, and use it commercially without being required to open-source your modifications.
+- **jsmpeg-vnc Dependency**: © Dominic Szablewski (phoboslab), licensed under [GPLv3](https://www.gnu.org/licenses/gpl-3.0.html). This project invokes jsmpeg-vnc as a separate, independent process and does not constitute a derived work. Therefore, the MIT license and GPLv3 are compatible in this context.
+- **Redistribution Requirements**: If you distribute a packaged build containing jsmpeg-vnc, you must retain the jsmpeg-vnc LICENSE file and original author attribution.
 
-## 🙏 致谢
-本项目基于Dominic Szablewski开发的[jsmpeg-vnc](https://github.com/phoboslab/jsmpeg-vnc)实现，感谢其开源贡献。
+## 🙏 Acknowledgments
+This project is built upon [jsmpeg-vnc](https://github.com/phoboslab/jsmpeg-vnc) developed by Dominic Szablewski. Thanks for the open-source contribution!
 
 ---
-如果觉得本项目有用，欢迎Star⭐！
+If you find this project helpful, please consider giving it a Star⭐!
