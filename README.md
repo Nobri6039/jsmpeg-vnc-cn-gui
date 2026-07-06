@@ -1,5 +1,4 @@
 [🇺🇸 English](README.en.md) | [🇨🇳 中文]
-![界面预览](screenshot.png)
 
 ## 🚀 快速开始
 ### 1. 准备依赖
@@ -45,3 +44,4 @@ A：正常情况下Job Object机制会自动清理，若出现极端情况，可
 
 ---
 如果觉得本项目有用，欢迎Star⭐！
+![界面预览](screenshot.png)
