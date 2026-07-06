@@ -1,3 +1,4 @@
+[🇺🇸 English](README.en.md) | [🇨🇳 中文]
 ## 🚀 快速开始
 ### 1. 准备依赖
 从[jsmpeg-vnc官方Release页](https://github.com/phoboslab/jsmpeg-vnc/releases)下载最新版本的`jsmpeg-vnc-win.zip`，解压后将`jsmpeg-vnc.exe`与其同目录文件复制到上述`Bin`目录中。（默认搭载如下版本）
