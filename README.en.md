@@ -1,4 +1,4 @@
-[简体中文](README.md) | [English]
+[简体中文](README.md) | English
 ## 🚀 Quick Start
 ### 1. Prepare Dependencies
 Download the latest `jsmpeg-vnc-win.zip` from the [jsmpeg-vnc Official Release Page](https://github.com/phoboslab/jsmpeg-vnc/releases). Extract the files and copy `jsmpeg-vnc.exe` along with its accompanying files into the `Bin` directory mentioned above. (Default bundled version below)
