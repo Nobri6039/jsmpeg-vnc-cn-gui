@@ -1,4 +1,4 @@
-[English](README.en.md) | 简体中文
+ 简体中文 | [English](README.en.md)
 
 ## 🚀 快速开始
 ### 1. 准备依赖
